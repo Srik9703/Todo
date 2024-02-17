@@ -1,0 +1,23 @@
+
+<h3 style="color: blue; font-family: Arial;">Update Task</h3>
+
+<form method="POST" action="">
+
+    {% csrf_token %}
+
+    {{form}}
+    <style>
+        .submit-button {
+            background-color: #ffcc00;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+
+    <input type="submit" name="Update Task" class="submit-button">
+	
+	
+</form>

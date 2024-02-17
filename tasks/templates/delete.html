@@ -1,0 +1,37 @@
+<p>Are you sure you want to delete "{{item}}"?</p>
+
+<a href="{% url 'index' %}" >Cancel</a>
+
+<form method="POST" action="">
+	{% csrf_token %}
+	<input type="submit" name="Confirm">
+</form>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+    }
+
+    p {
+        font-size: 18px;
+        color: #333;
+    }
+
+    a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    form {
+        margin-top: 20px;
+    }
+
+    input[type="submit"],a {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+    }
+</style>
